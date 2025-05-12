@@ -95,41 +95,7 @@
         nav a:hover::after {
             width: 100%;
         }
-        /* Navbar styling */
-      .navbar-brand {
-        font-weight: 700;
-        font-size: 1.8rem;
-      }
-      
-      .navbar-brand span {
-        color: var(--accent);
-      }
-      
-      .nav-link {
-        font-weight: 500;
-        position: relative;
-        margin: 0 10px;
-      }
-      
-      .nav-link::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 0;
-        height: 2px;
-        background-color: var(--accent);
-        transition: width 0.3s;
-      }
-      
-      .nav-link:hover::after {
-        width: 100%;
-      }
-      
-      .nav-icons .nav-link {
-        font-size: 1.2rem;
-        margin: 0 8px;
-      }
+        
         .cart-icon {
             position: relative;
         }
@@ -468,64 +434,20 @@
     </style>
 </head>
 <body>
-    <!-- Header/Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 sticky-top">
-        <div class="container">
-          <a class="navbar-brand" href="index.html">Shop<span>Ease</span></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto">
-              <li class="nav-item">
-                <a class="nav-link active" href="index.html">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                >
-                  Categories
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="products.html">Electronics</a></li>
-                  <li><a class="dropdown-item" href="products.html">Fashion</a></li>
-                  <li><a class="dropdown-item" href="products.html">Home & Kitchen</a></li>
-                  <li><a class="dropdown-item" href="products.html">Beauty</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="products.html">Products</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="deals.html">Deals</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-              </li>
-            </ul>
-            <div class="nav-icons d-flex">
-              <a href="search.html" class="nav-link text-white">
-                <i class="fas fa-search"></i>
-              </a>
-              <a href="account.html" class="nav-link text-white">
-                <i class="fas fa-user"></i>
-              </a>
-              <a href="cart.html" class="nav-link text-white">
-                <i class="fas fa-shopping-cart"></i>
-                <span class="badge bg-accent rounded-pill">3</span>
-              </a>
-            </div>
-          </div>
+    <!-- Header -->
+    <header>
+        <div class="header-container container">
+            <a href="#" class="logo">Shop<span>Ease</span></a>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-3 sticky-top">
+                <a href="#">Home</a>
+                <a href="#">Products</a>
+                <a href="#">Categories</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#" class="cart-icon">Cart <span class="cart-count">3</span></a>
+            </nav>
         </div>
-      </nav>  
+    </header>
     
     <!-- Hero Section -->
     <section class="hero">
@@ -545,7 +467,7 @@
         <div class="products">
             <!-- Product 1 -->
             <div class="product-card">
-                <img src="images/" alt="Product 1" class="product-image">
+                <img src="images/wireless-earbuds.jpg" alt="Product 1" class="product-image">
                 <div class="product-info">
                     <h3 class="product-title">Premium Headphones</h3>
                     <div class="product-price">$129.99</div>
@@ -567,7 +489,7 @@
             
             <!-- Product 3 -->
             <div class="product-card">
-                <img src="/api/placeholder/400/300" alt="Product 3" class="product-image">
+                <img src="images/bluetooth-speaker.jpg" alt="Product 3" class="product-image">
                 <div class="product-info">
                     <h3 class="product-title">Wireless Speaker</h3>
                     <div class="product-price">$59.99</div>
@@ -578,7 +500,7 @@
             
             <!-- Product 4 -->
             <div class="product-card">
-                <img src="/api/placeholder/400/300" alt="Product 4" class="product-image">
+                <img src="images/leather-wallet.jpg" alt="Product 4" class="product-image">
                 <div class="product-info">
                     <h3 class="product-title">Leather Wallet</h3>
                     <div class="product-price">$39.99</div>
