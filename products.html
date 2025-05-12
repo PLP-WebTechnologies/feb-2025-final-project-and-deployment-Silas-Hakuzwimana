@@ -64,6 +64,37 @@
             color: var(--primary-color);
         }
         
+        nav {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+        
+        nav a {
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+        
+        nav a:hover {
+            color: var(--primary-color);
+        }
+        
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: var(--primary-color);
+            transition: width 0.3s ease;
+        }
+        
+        nav a:hover::after {
+            width: 100%;
+        }
         /* Navbar styling */
       .navbar-brand {
         font-weight: 700;
@@ -99,7 +130,6 @@
         font-size: 1.2rem;
         margin: 0 8px;
       }
-        
         .cart-icon {
             position: relative;
         }
