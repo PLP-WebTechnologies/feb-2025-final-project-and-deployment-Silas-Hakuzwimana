@@ -86,7 +86,11 @@
               ></a>
               <a href="cart.html" class="nav-link text-white">
                 <i class="fas fa-shopping-cart"></i>
-                <span class="badge bg-warning text-dark rounded-pill">3</span>
+                <span
+                  id="cart-badge"
+                  class="badge bg-warning text-dark rounded-pill"
+                  >0</span
+                >
               </a>
             </div>
           </div>
@@ -127,10 +131,19 @@
                 High-quality wireless headphones with noise cancellation and
                 sound clarity.
               </p>
-              <button class="btn btn-outline-primary">Add to Cart</button>
+              <button
+                class="btn btn-outline-primary add-to-cart-btn"
+                data-id="1"
+                data-title="Premium Headphones"
+                data-price="129.99"
+                data-img="images/wireless-earbuds.jpg"
+              >
+                Add to Cart
+              </button>
             </div>
           </div>
         </div>
+
         <!-- Product 2 -->
         <div class="col-md-3">
           <div class="card h-100 text-center">
@@ -146,10 +159,19 @@
                 Track your fitness goals and stay connected with this stylish
                 smartwatch.
               </p>
-              <button class="btn btn-outline-primary">Add to Cart</button>
+              <button
+                class="btn btn-outline-primary add-to-cart-btn"
+                data-id="2"
+                data-title="Smart Watch"
+                data-price="89.99"
+                data-img="images/smart-watch.jpg"
+              >
+                Add to Cart
+              </button>
             </div>
           </div>
         </div>
+
         <!-- Product 3 -->
         <div class="col-md-3">
           <div class="card h-100 text-center">
@@ -164,10 +186,19 @@
               <p class="small text-muted">
                 Portable speaker with rich bass and 24-hour battery life.
               </p>
-              <button class="btn btn-outline-primary">Add to Cart</button>
+              <button
+                class="btn btn-outline-primary add-to-cart-btn"
+                data-id="3"
+                data-title="Wireless Speaker"
+                data-price="59.99"
+                data-img="images/bluetooth-speaker.jpg"
+              >
+                Add to Cart
+              </button>
             </div>
           </div>
         </div>
+
         <!-- Product 4 -->
         <div class="col-md-3">
           <div class="card h-100 text-center">
@@ -182,7 +213,93 @@
               <p class="small text-muted">
                 Genuine leather wallet with RFID protection and card slots.
               </p>
-              <button class="btn btn-outline-primary">Add to Cart</button>
+              <button
+                class="btn btn-outline-primary add-to-cart-btn"
+                data-id="4"
+                data-title="Leather Wallet"
+                data-price="39.99"
+                data-img="images/wallet.jpg"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="col-md-3">
+          <div class="card h-100 text-center">
+            <img
+              src="images/power-bank.jpg"
+              class="card-img-top"
+              alt="Power bank"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Portable Power Bank (10,000 mAh)</h5>
+              <p class="card-text">$24.99</p>
+              <p class="small text-muted">Fast-charging USB-C + USB-A ports.</p>
+              <button
+                class="btn btn-outline-primary add-to-cart-btn"
+                data-id="5"
+                data-title="Portable Power Bank (10,000 mAh)"
+                data-price="24.99"
+                data-img="images/power-bank.jpg"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="col-md-3">
+          <div class="card h-100 text-center">
+            <img
+              src="images/smart-fitness-band.jpg"
+              class="card-img-top"
+              alt="Smart Fitness Band"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Smart Fitness Band</h5>
+              <p class="card-text">$29.99</p>
+              <p class="small text-muted">
+                Tracks steps, heart rate, and sleep patterns.
+              </p>
+              <button
+                class="btn btn-outline-primary add-to-cart-btn"
+                data-id="6"
+                data-title="Smart Fitness Band"
+                data-price="29.99"
+                data-img="images/smart-fitness-band.jpg"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Product 7 -->
+        <div class="col-md-3">
+          <div class="card h-100 text-center">
+            <img
+              src="images/usb-drive.jpg"
+              class="card-img-top"
+              alt="USB-C to HDMI Adapter"
+            />
+            <div class="card-body">
+              <h5 class="card-title">USB-C to HDMI Adapter</h5>
+              <p class="card-text">$14.99</p>
+              <p class="small text-muted">
+                Connect your laptop to TVs and projectors.
+              </p>
+              <button
+                class="btn btn-outline-primary add-to-cart-btn"
+                data-id="7"
+                data-title="USB-C to HDMI Adapter"
+                data-price="14.99"
+                data-img="images/usb-drive.jpg"
+              >
+                Add to Cart
+              </button>
             </div>
           </div>
         </div>
@@ -281,35 +398,30 @@
               <li><a href="#" class="text-light">Contact Us</a></li>
               <li><a href="#" class="text-light">FAQs</a></li>
               <li><a href="#" class="text-light">Shipping Policy</a></li>
-              <li><a href="#" class="text-light">Returns & Refunds</a></li>
+              <li><a href="#" class="text-light">Returns & Exchanges</a></li>
             </ul>
           </div>
           <div class="col-md-3">
-            <h5>Information</h5>
+            <h5>Company</h5>
             <ul class="list-unstyled">
               <li><a href="#" class="text-light">About Us</a></li>
+              <li><a href="#" class="text-light">Careers</a></li>
               <li><a href="#" class="text-light">Privacy Policy</a></li>
               <li><a href="#" class="text-light">Terms & Conditions</a></li>
-              <li><a href="#" class="text-light">Blog</a></li>
             </ul>
           </div>
         </div>
-        <div class="text-center mt-4">
-          <p>
-            &copy; <span id="footerYear"></span> ShopEase. All rights reserved.
-          </p>
+        <div class="text-center mt-3">
+          <small>© 2025 ShopEase. All Rights Reserved.</small>
         </div>
       </div>
     </footer>
 
-    <!-- Scripts -->
-    <script>
-      // Dynamic year in footer
-      document.getElementById("footerYear").textContent =
-        new Date().getFullYear();
-    </script>
+    <!-- Bootstrap JS & Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/main.js"></script>
+    <!-- Custom JS -->
+    <script src="js/cart.js"></script>
   </body>
 </html>

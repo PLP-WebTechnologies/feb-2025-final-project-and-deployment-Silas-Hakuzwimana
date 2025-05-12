@@ -35,7 +35,6 @@
   
   /* Hero Section */
   .hero {
-    background: url('images/shop-hero.jpg') center/cover no-repeat;
     height: 300px;
     display: flex;
     align-items: center;
@@ -82,6 +81,24 @@
   
   .product-card .info h3 {
     margin-bottom: 0.5rem;
+  }
+  #cart-items .card {
+    min-height: 100%;
+  }
+    #cart-items .card img {
+        max-height: 200px;
+        object-fit: cover;
+    }  
+  #cart-items .card {
+    transition: transform 0.2s;
+  }
+  
+  #cart-items .card:hover {
+    transform: scale(1.02);
+  }
+  
+  .card-img-top {
+    background-color: #f8f9fa;
   }
   
   .product-card .info button {

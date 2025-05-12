@@ -145,8 +145,6 @@ nav a:hover::after {
 
 /* Hero section */
 .hero {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
-    url("/api/placeholder/1200/400") center/cover no-repeat;
   height: 400px;
   display: flex;
   align-items: center;
