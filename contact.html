@@ -22,7 +22,7 @@
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/contact.css" />
+    <link rel="stylesheet" href="css/product.css" />
   </head>
   <body>
     <!-- Header/Navbar -->
@@ -77,7 +77,7 @@
             </a>
             <a href="cart.html" class="nav-link text-white">
               <i class="fas fa-shopping-cart"></i>
-              <span class="badge bg-accent rounded-pill">3</span>
+              <span id="card-badge" class="badge bg-warning text-dark rounded-pill"></span>
             </a>
           </div>
         </div>
@@ -338,7 +338,9 @@
           <div class="col-lg-3 col-md-6 mb-4 footer-links">
             <h5>Contact Us</h5>
             <ul>
-              <li><i class="fas fa-map-marker-alt me-2"></i> 123 Main Street, City, Country</li>
+               <li>
+                <i class="fas fa-map-marker-alt me-2"></i> KN 75 ST Kigali
+              </li>
               <li><i class="fas fa-phone me-2"></i> +250 783 749 019</li>
               <li><i class="fas fa-envelope me-2"></i> support@shopease.com</li>
               <li><i class="fas fa-clock me-2"></i> Mon-Fri: 9AM - 6PM</li>
@@ -379,5 +381,6 @@
         this.reset();
       });
     </script>
+    <script src="js/cart.js"></script>
   </body>
 </html>
